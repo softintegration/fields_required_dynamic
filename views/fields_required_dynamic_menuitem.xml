@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem action="ir_model_fields_required_action"
+                  id="ir_model_fields_required_menu"
+                  name="Required Fields settings"
+                  parent="base.next_id_9"
+                  groups="fields_required_dynamic.group_fields_required_settings"
+                  sequence="60"/>
+
+</odoo>

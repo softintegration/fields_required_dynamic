@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ir_model_fields_required_user,ir_model_fields_required_user,model_ir_model_fields_required,base.group_user,1,0,0,0
+access_ir_model_fields_required_manager,ir_model_fields_required_manager,model_ir_model_fields_required,fields_required_dynamic.group_fields_required_settings,1,1,1,1
+

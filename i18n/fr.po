@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fields_required_dynamic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-11 21:33+0000\n"
+"PO-Revision-Date: 2023-05-11 21:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__active
+msgid "Active"
+msgstr "Active"
+
+#. module: fields_required_dynamic
+#: model_terms:ir.ui.view,arch_db:fields_required_dynamic.ir_model_fields_required_search
+msgid "Active field required"
+msgstr "Champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__domain
+msgid "Application domain"
+msgstr "Domaine d'application"
+
+#. module: fields_required_dynamic
+#: model_terms:ir.ui.view,arch_db:fields_required_dynamic.ir_model_fields_required_search
+msgid "Archived field required"
+msgstr "Champs obligatoires archivés"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model_terms:ir.ui.view,arch_db:fields_required_dynamic.ir_model_fields_required_tree_editable
+msgid "Fields required"
+msgstr "Champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__fields_ids
+msgid "Fields to be required"
+msgstr "Champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__id
+msgid "ID"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__model_id
+msgid "Model"
+msgstr "Modèle"
+
+#. module: fields_required_dynamic
+#: model:ir.model.fields,field_description:fields_required_dynamic.field_ir_model_fields_required__model_name
+msgid "Model Name"
+msgstr "Nom du Modèle"
+
+#. module: fields_required_dynamic
+#: code:addons/fields_required_dynamic/models/ir_model_fields_required.py:0
+#, python-format
+msgid "One or many fields selected does not belong to selected model!"
+msgstr "Un ou plusieurs champs sélectionnés n'appartiennent pas au modèle sélectionné"
+
+#. module: fields_required_dynamic
+#: model:ir.ui.menu,name:fields_required_dynamic.ir_model_fields_required_menu
+msgid "Required Fields settings"
+msgstr "Configuration des champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:ir.actions.act_window,name:fields_required_dynamic.ir_model_fields_required_action
+msgid "Required fields"
+msgstr "Champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:ir.model,name:fields_required_dynamic.model_ir_model_fields_required
+msgid "Required model fields"
+msgstr "Champs obligatoires du Modèle"
+
+#. module: fields_required_dynamic
+#: model_terms:ir.ui.view,arch_db:fields_required_dynamic.ir_model_fields_required_search
+msgid "Search Fields required"
+msgstr "Rechercher les champs obligatoires"
+
+#. module: fields_required_dynamic
+#: model:res.groups,name:fields_required_dynamic.group_fields_required_settings
+msgid "Set the field as required with rules"
+msgstr "Configurer des champs obligatoires par des règles"
+
+#. module: fields_required_dynamic
+#: model:ir.model,name:fields_required_dynamic.model_ir_ui_view
+msgid "View"
+msgstr "Vue"
