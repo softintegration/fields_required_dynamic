@@ -20,6 +20,7 @@ class IrUiView(models.Model):
             return
         if node.tag == 'field' and node.get('name'):
             field = name_manager.model._fields.get(node.get('name'))
+            required_domain = self.env["ir.model.fields.required"]._parse_domain(name_manager.model._name,required_domain)
             if field.name in required_fields:
-                node_info['modifiers'].update({'required':ast.literal_eval(required_domain)})
+                node_info['modifiers'].update({'required':required_domain})
 
