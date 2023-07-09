@@ -38,11 +38,14 @@ class IrModelFieldsRequired(models.Model):
                 raise UserError(_("One or many fields selected does not belong to selected model!"))
 
     def _get_configured_required_fields(self, model_name):
+        required_fields_by_domain = []
         domain = [('model_name', '=', model_name)]
-        rule_model = self.search(domain)
-        rule_fields = [field.name for field in rule_model.fields_ids]
-        rule_domain = rule_model.domain
-        return rule_fields, rule_domain
+        rules_model = self.search(domain)
+        for rule_model in rules_model:
+            rule_fields = [field.name for field in rule_model.fields_ids]
+            rule_domain = rule_model.domain
+            required_fields_by_domain.append((rule_fields,rule_domain))
+        return required_fields_by_domain
 
     @api.model
     def _parse_domain(self, model, domain):

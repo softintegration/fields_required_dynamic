@@ -15,12 +15,14 @@ class IrUiView(models.Model):
 
     def _postprocess_tag_field(self, node, name_manager, node_info):
         super(IrUiView, self)._postprocess_tag_field(node, name_manager, node_info)
-        required_fields,required_domain = self.env['ir.model.fields.required']._get_configured_required_fields(name_manager.model._name)
-        if not required_fields or not required_domain:
+        #required_fields,required_domain = self.env['ir.model.fields.required']._get_configured_required_fields(name_manager.model._name)
+        required_fields_by_domain = self.env['ir.model.fields.required']._get_configured_required_fields(name_manager.model._name)
+        if not required_fields_by_domain:
             return
         if node.tag == 'field' and node.get('name'):
             field = name_manager.model._fields.get(node.get('name'))
-            required_domain = self.env["ir.model.fields.required"]._parse_domain(name_manager.model._name,required_domain)
-            if field.name in required_fields:
-                node_info['modifiers'].update({'required':required_domain})
+            for required_fields,required_domain in required_fields_by_domain:
+                required_domain = self.env["ir.model.fields.required"]._parse_domain(name_manager.model._name,required_domain)
+                if field.name in required_fields:
+                    node_info['modifiers'].update({'required':required_domain})
 
